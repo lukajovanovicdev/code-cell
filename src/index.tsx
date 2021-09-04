@@ -3,7 +3,11 @@ import CodeCell from './components/code-cell';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
 
 const App = () => {
-  return <CodeCell />;
+  return (
+    <div>
+      <CodeCell />
+    </div>
+  );
 };
 
 ReactDom.render(<App />, document.querySelector('#root'));
