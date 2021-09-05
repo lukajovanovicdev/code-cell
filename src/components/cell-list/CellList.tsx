@@ -5,7 +5,7 @@ import React from 'react';
 
 const CellList: React.FC = () => {
   // @ts-ignore
-  const cells = useTypedSelector(({ cells: { order, data } }) => order.map((id) => data[id]));
+  const cells = useTypedSelector(({ cells: { order, data } }) => order.map((id: any) => data[id]));
 
   const renderedCells = cells.map((cell: any) => (
     <React.Fragment key={cell.id}>
